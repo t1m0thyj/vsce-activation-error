@@ -2,15 +2,16 @@
   "name": "vsce-activation-error",
   "displayName": "vsce-activation-error",
   "description": "",
+  "publisher": "_",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.73.0"
+    "vscode": "^1.30.0"
   },
   "categories": [
     "Other"
   ],
   "activationEvents": [
-    "onCommand:vsce-activation-error.helloWorld"
+    "onStartupFinished"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -30,7 +31,7 @@
     "test": "node ./out/test/runTest.js"
   },
   "devDependencies": {
-    "@types/vscode": "^1.73.0",
+    "@types/vscode": "1.30.0",
     "@types/glob": "^8.0.0",
     "@types/mocha": "^10.0.0",
     "@types/node": "16.x",
